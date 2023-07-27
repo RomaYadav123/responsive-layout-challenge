@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>responsive layout</title>
+    <link rel="stylesheet" href="../css/responsive-styles-a.css" />
+  </head>
+
+  <body>
+    <div class="outerContainer">
+      <!-- 1st div -->
+      <div>
+        <h3 class="commonStyling">header</h3>
+      </div>
+
+      <!-- 2nd div -->
+      <div id="flex-container">
+        <!-- 3rd div -->
+        <div class="innerBox1">
+          <div
+            style="
+              flex: 100%;
+              width: 100%;
+              background-color: red;
+              margin: auto;
+              align-items: center;
+              justify-content: center;
+              display: flex;
+            "
+          >
+            <h3>a</h3>
+          </div>
+          <div
+            style="
+              flex: 100%;
+              width: 100%;
+              background-color: orange;
+              margin: auto;
+              align-items: center;
+              justify-content: center;
+              display: flex;
+            "
+          >
+            <h3>b</h3>
+          </div>
+        </div>
+
+        <!-- 4th div -->
+        <div class="innerBox2">
+          <h3>c</h3>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="commonStyling">vfooter</h3>
+      </div>
+    </div>
+  </body>
+</html>
