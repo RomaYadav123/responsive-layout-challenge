@@ -1,35 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
 .outerContainer {
   width: 100%;
-  height: 90vmin;
+  height: 100vh;
+  border-style: solid;
+  display: flex;
+  flex-direction: column;
 }
 
 .commonStyling {
   background-color: #d1d2d4;
-  height: 65px;
-  padding: 20px;
+  margin: auto;
+  width: 100%;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 #flex-container {
   display: flex;
-  align-items: center;
-  width: 100%;
-  height: 60vmin;
+  flex-grow: 12;
+  margin: 20px 0px 20px 0px;
 }
 
 .innerBox1 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: inherit;
+  height: 100%;
   margin: auto;
 }
 
 .innerBox2 {
   display: flex;
-  height: inherit;
   width: 100%;
+  height: 100%;
   margin: auto;
   background-color: yellow;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  #flex-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 12; */
+    /* margin: 20px 0px 20px 0px; */
+  }
+
+  .innerBox1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 66.66%;
+    margin: auto;
+  }
+
+  .innerBox2 {
+    display: flex;
+    width: 100%;
+    height: 33.33%;
+    margin: auto;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+  }
 }
